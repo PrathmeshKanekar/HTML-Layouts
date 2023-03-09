@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 1 Float Layout</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        background-color: gray;
+        padding: 40px;
+      }
+      nav {
+        background-color: darkgray;
+        width: 30%;
+        height: 300px;
+        padding: 20px;
+        float: left;
+      }
+      ul {
+        list-style: none;
+        padding: 10px;
+      }
+      li a {
+        font-size: 25px;
+      }
+      article {
+        float: left;
+        height: 300px;
+        width: 50%;
+        padding: 20px;
+      }
+      footer {
+        background-color: gray;
+        clear: both;
+        text-align: center;
+        padding: 20px;
+      }
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cities</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">London</a></li>
+        <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>London</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, labore
+        consequatur enim ipsum error sit eligendi! Assumenda, soluta mollitia
+        omnis, in alias voluptatibus repudiandae porro voluptate minus quo nemo
+        accusantium!
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+        perspiciatis dicta voluptatem nobis minima eos sed quasi, rem libero in.
+        Id, ab accusantium. Ipsum ea sunt, repudiandae dolor repellat cumque!
+      </p>
+    </article>
+    <footer>
+      <h3>Footer</h3>
+    </footer>
+  </body>
+</html>
